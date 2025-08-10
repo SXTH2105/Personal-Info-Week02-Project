@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Info Page </h1>
+        <nav>
+            <a href="#form">Form</a>
+            <a href="#table">Table</a>
+            <a href="#photo">Photo</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="form">
+        <h2>Register Your Info</h2>
+        <form action="getInfo">
+            <label for="fName"> Full Name : </label>
+            <input type="text" name="fName" id="fName" required>
+            <br>         
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <label for="birth">Date Of Birth</label>
+            <input type="date" name="birth" id="birth" required>
+            <br>
+            <label for="gender">Gender : </label>
+            <input type="radio" name="male" id="male" required> Male
+            <input type="radio" name="female" id="female" required> Female
+            <br>
+            <label for="country">Select Your Country : </label>
+            <select name="country" id="country">
+                <option value="cambodia">Cambodia</option>
+                <option value="sg">Singapore</option>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+                <option value="us">United State</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="table">
+        <h2>Sample Personal Info</h2>
+        <table>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Country</th>
+            <tr>
+                <td>Kong Sokpiseth</td>
+                <td>kongsokpiseth@example.com</td>
+                <td>09/02/2007</td>
+                <td>Male</td>
+                <td>Cambodia</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="photo">
+        <h2>Profile Picture</h2>
+        <figure>
+            <img src="img/pfp_about.jpeg" alt="profilePicture">
+            <figcaption>My name is Kong Sokpiseth. I am a year 1 Software Engineering at Kirirom Institute Of Technology. I just got my Full Stack class teach by Ms. Jemima.</figcaption>
+        </figure>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-info">
+            <h3>Contact Information</h3>
+            <i class="fas fa-envelope"></i>
+            <span>kong.sokpiseth25@kit.edu.kh</span>
+            <br>
+            <i class="fas fa-phone"></i>
+            <span>+(855) 012-345-678</span>
+            <br>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kirirom Mountain, Cambodia</span>
+            <div class="social-link">
+            <a href="https://github.com/SXTH2105" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/kong_sokpiseth" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.facebook.com/share/195J4PobsD/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sethblablabla223?igsh=MTk4eDVpN2Z1dDJwOA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+
+        <div id="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <section>
+            <h3>My Personal Info</h3>
+            <div id="footer-link">
+            <a href="#form">Form</a>
+            <a href="#table">Table</a>
+            <a href="#photo">Photo</a>
+            <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Kong Sokpiseth. All rights reserved.
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
